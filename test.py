@@ -1,4 +1,4 @@
-import samplegen as sg
+import samplegen as sg #"import FILENAME" will import from the local file
 import matplotlib.pyplot as plt
 
 #Test that looks at the data. Not necessary
