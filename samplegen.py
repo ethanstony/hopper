@@ -15,12 +15,20 @@ def sample(sigma, slant=0.015):
     dis =  rng.normal(mu,sigma,steps-1)
     
     for ii in range(len(x)-1):
-        y.append(y[ii]*(dis[ii]))
+        if (y[ii]>0):
+            q=y[ii]*dis[ii]
+        else:
+            q=slant
+
+        if(q>0):
+            y.append(q)
+        else:
+            y.append(0)
 
     return x, y
 
 #Test that looks at the data. Not necessary
 for ii in range(10):
-    xs, ys = sample(.2)
+    xs, ys = sample(.3)
     plt.plot(xs,ys)
 plt.show()
