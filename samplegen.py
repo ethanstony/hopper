@@ -1,12 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def sample(sigma, slant=0.015):
+def sample(sigma, slant=0.05,start=0,end=365,h=1):
     rng = np.random.default_rng()
 
-    start = 0
-    end = 1
-    h = 0.01
     steps = int((end-start)/h+1)
     mu = 1 + slant
 
@@ -31,4 +28,5 @@ def sample(sigma, slant=0.015):
 for ii in range(10):
     xs, ys = sample(.3)
     plt.plot(xs,ys)
-plt.show()
+    plt.show()
+    plt.clf()
