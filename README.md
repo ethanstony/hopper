@@ -4,7 +4,7 @@ Stock Hopper is a basic stock tracker that was built with the intention of track
 
 <img src = "website.png"/>
 
-##Features
+## Features
 * Search bar for searching up a stock ticker
 * Stock details menu for checking the latest trend of a stock
 * Side bar that displays the latest Top Gainers
