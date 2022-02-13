@@ -4,9 +4,9 @@ import topten
 
 app = Flask(__name__)
 
-@app.route("/")
-def sendRes():
-    return raw.sendRaw()
+@app.route("/<ticker>")
+def sendRes(ticker):
+    return raw.sendRaw(ticker)
 
 # returns top ten gainers for sidebar
 @app.route("/topTen")

@@ -8,7 +8,7 @@ from datetime import timezone
 from dateutil.relativedelta import relativedelta
 import json
 
-def sendRaw():
+def sendRaw(ticker):
     
     pd.set_option("display.max_rows", None, "display.max_columns", None)
 
@@ -18,17 +18,17 @@ def sendRaw():
     #get current date in yyyy-mm-dd format
     currentDate = time.strftime("%Y-%m-%d")
 
-    #get AAPL data from yahoofinance 
-    aapl_df = yf.download('AAPL', 
+    #get AAPL data from yahoofinance (try AAPL)
+    stock_df = yf.download(ticker, 
                         start = startDate,
                         end=currentDate
     )
 
     #convert fetched dataframe to json
-    applson = DataFrame.to_json(aapl_df, orient = "table")
+    stockson = DataFrame.to_json(stock_df, orient = "table")
 
     #convert applson json var to dict
-    pythonObj = json.loads(applson)['data']
+    pythonObj = json.loads(stockson)['data']
     
     #create res dict with subdictionaries that have only 'Date' and 'Close' keys
     res = {}
