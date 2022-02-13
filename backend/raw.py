@@ -40,5 +40,4 @@ def sendRaw():
         res[resIndex] = resObj
         resIndex += 1
 
-    print(res)
     return res
