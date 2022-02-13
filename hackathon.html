@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
+<title>Stock Hopper</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -169,55 +169,57 @@ ul {
 }
 
 </style>
+
 </head>
+
 <body>
-
-<!--TITLE BAR-->
-<div class="header">
-  <h1>Stock Hopper</h1>
-  <p>Get the latest information on stocks!</p>
-</div>
-
-<!--TOP BLACK BAR-->
-<div class="navbar">
-  <a href="#" class="right"></a>
-</div>
-
-<div class="row">
-    <!--SIDE BAR-->
-  <div class="side">
-    <h2>TOP GAINERS</h2>
-    <ul style="list-style: none;">
-        <li><a href="#">MSFT 11.2%</a></li>
-        <li><a href="#">FB 10.2%</a></li>
-        <li><a href="#">NVDA 9.3%</a></li>
-        <li><a href="#">PG 8.4%%</a></li>
-        <li><a href="#">NIO 8.2%</a></li>
-        <li><a href="#">AMZN 7.9%</a></li>
-        <li><a href="#">WMT 7.6%%</a></li>
-        <li><a href="#">TSLA 12.6%%</a></li>
-    </ul>
+  <script src="myscripts.js"></script>
+  <!--TITLE BAR-->
+  <div class="header">
+    <h1>Stock Hopper</h1>
+    <p>Get the latest information on stocks!</p>
   </div>
-    <!--MAIN AREA-->
-  <div class="main">
-    
-    <!--PUT SEARCH HERE-->
-    <h2>Stock Search</h2>
-<p>Enter the name of the stock:</p>
-<form class="example" action="/action_page.php">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
-</form>
-    <!--END-->
-    <h2>STOCK DETAILS</h2>
-    <h2>Volatility Meter</h2>
-  </div>
-</div>
 
-<!--FOOTER-->
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+  <!--TOP BLACK BAR-->
+  <div class="navbar">
+    <a href="#" class="right"></a>
+  </div>
+
+  <div class="row">
+      <!--SIDE BAR-->
+    <div class="side">
+      <h2>TOP GAINERS</h2>
+      <ul style="list-style: none;">
+          <li><a href="#">MSFT 11.2%</a></li>
+          <li><a href="#">FB 10.2%</a></li>
+          <li><a href="#">NVDA 9.3%</a></li>
+          <li><a href="#">PG 8.4%%</a></li>
+          <li><a href="#">NIO 8.2%</a></li>
+          <li><a href="#">AMZN 7.9%</a></li>
+          <li><a href="#">WMT 7.6%%</a></li>
+          <li><a href="#">TSLA 12.6%%</a></li>
+      </ul>
+    </div>
+      <!--MAIN AREA-->
+    <div class="main">
+      
+      <!--PUT SEARCH HERE-->
+      <h2>Stock Search</h2>
+  <p>Enter the name of the stock:</p>
+  <form class="example" action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+      <!--END-->
+      <h2>STOCK DETAILS</h2>
+      <h2>Volatility Meter</h2>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
 
 </body>
 </html>
